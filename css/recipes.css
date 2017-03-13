@@ -2,3 +2,8 @@
   width: 90%;     /* specify a width! */
   margin: 0 auto; /* center */
 }
+
+#description {
+	font-size: 85%;
+	color: #a9a9a9;
+}
