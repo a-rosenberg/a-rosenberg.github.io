@@ -11,3 +11,28 @@
 div{
 	padding: 0.4em;
 }
+
+#ingredients {
+    width: 30%;
+    float:left; /* add this */
+/*    border: 1px solid red;
+*/}
+
+footer {
+	margin: 20px auto
+    padding: 1em;
+    color: black;
+    background-color: #FFFFFF;
+    clear: left;
+    text-align: center;
+}
+
+header {
+	margin-right: : 5px auto;
+    padding: 0.5em;
+    font-size: 120%;
+    color: #a9a9a9;
+    background-color: #FFFFFF;
+    clear: left;
+    text-align: right;
+}
