@@ -20,6 +20,10 @@ div{
     color: #a9a9a9;
 }
 
+.multiplierInput{
+    text-align: center;
+}
+
 #ingredients {
     width: 30%;
     float:left; /* add this */

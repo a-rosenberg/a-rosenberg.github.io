@@ -34,12 +34,10 @@
 						<li>toasted sesame seeds</li>
 					</ul>
 				</div>
-				 <form name="multiplierInput">
-    				<span class="scale">recipe multiplier: <input type="text" name="multiplier" value="1"></span><br>
+ 				<form name="multiplierInput" class="multiplierInput">
+    				<span class="scale">recipe multiplier: <input type="text" name="multiplier" value="1" style="width: 15%"></span>
+    				<input id="scaleButton" type="button" onClick="scaleRecipe();" value="scale recipe">
   				</form>
-  				<div class="buttonHolder">
-  					<input id="scaleButton" type="button" onClick="scaleRecipe();" value="scale recipe">
-  				</div>
 			<!-- <button id="hideButton" type="button" onclick="hideIngredients()">hide ingredients</button> -->
 			</div>
 		</div>
