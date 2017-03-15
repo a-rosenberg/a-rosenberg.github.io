@@ -16,6 +16,10 @@ div{
 	padding: 0.4em;
 }
 
+.scale{
+    color: #a9a9a9;
+}
+
 #ingredients {
     width: 30%;
     float:left; /* add this */
