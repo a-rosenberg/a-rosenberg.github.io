@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/recipes.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script type="text/javascript" src='../js/code.js'></script>
+	<script type="text/javascript" src='../js/recipes.js'></script>
 </head>
 <body>
 	<!-- <header>mangoes and trailmix</header> -->
@@ -19,21 +19,27 @@
 				<div id="ingredient-list">
 					<h4>ingredients</h4>
 					<ul>
-						<li>1.5 cup short grain brown rice</li>
-						<li>1/2 cup wild rice</li>
-						<li>2 cup thinly sliced red cabbage</li>
-						<li>1 Tbsp rice vinegar and 3 Tbsp rice vinegar</li>
-						<li>1 large asian sweet potato or 2 medium; 1" dice (normal sweet potatos are fine)</li>
-						<li>1 small head of broccoli cut into florets</li>
-						<li>1 carrot sliced into the thinnest rounds you can</li>
-						<li>1 bunch of green onions sliced</li>
-						<li>1 can full fat coconut milk</li>
-						<li>1 cup peanut butter</li>
-						<li>3 Tbsp thai red curry paste</li>
-						<li>1 tsp soy sauce</li>
+						<li><span class="quantity">1.5</span> cup short grain brown rice</li>
+						<li><span class="quantity">1/2</span> cup wild rice</li>
+						<li><span class="quantity">2</span> cup thinly sliced red cabbage</li>
+						<li><span class="quantity">1</span> Tbsp rice vinegar and <span class="quantity">3</span> Tbsp rice vinegar</li>
+						<li><span class="quantity">1</span> large asian sweet potato or <span class="quantity">2</span> medium; 1" dice (normal sweet potatos are fine)</li>
+						<li><span class="quantity">1</span> small head of broccoli cut into florets</li>
+						<li><span class="quantity">1</span> carrot sliced into the thinnest rounds you can</li>
+						<li><span class="quantity">1</span> bunch of green onions sliced</li>
+						<li><span class="quantity">1</span> can full fat coconut milk</li>
+						<li><span class="quantity">1</span> cup peanut butter</li>
+						<li><span class="quantity">3</span> Tbsp thai red curry paste</li>
+						<li><span class="quantity">1</span> tsp soy sauce</li>
 						<li>toasted sesame seeds</li>
 					</ul>
 				</div>
+				 <form name="multiplierInput">
+    				<span style="color:#a9a9a9;">recipe multiplier: </span><input type="text" name="multiplier" value="1"><br>
+  				</form>
+  				<div class="buttonHolder">
+  					<input id="scaleButton" type="button" onClick="scaleRecipe();" value="scale recipe">
+  				</div>
 			<!-- <button id="hideButton" type="button" onclick="hideIngredients()">hide ingredients</button> -->
 			</div>
 		</div>

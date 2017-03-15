@@ -9,3 +9,20 @@ function unhideIngredients(){
 	document.getElementById('hideButton').setAttribute( "onclick", "javascript: hideIngredients();" );
 	document.getElementById('hideButton').innerHTML="hide ingredients";
 }
+
+function getRequestedMultiplierCount(){
+  var multiplier = document.forms.multiplierInput.multiplier.value.trim();
+  document.getElementById("description").innerHTML = "new";
+  return Number(multiplier);
+}
+
+function scaleRecipe(){
+	var multiplier;
+	multiplier = getRequestedMultiplierCount();
+
+	var ingredients;
+	ingredients = document.getElementsByClassName("quantity");
+	for (i in ingredients) {
+		ingredients[i].innerHTML = 'test' // Number(ingredients[i].innerHTML) * multiplier
+	};
+}

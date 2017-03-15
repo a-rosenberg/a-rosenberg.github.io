@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/recipes.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script type="text/javascript" src='../js/code.js'></script>
+	<script type="text/javascript" src='../js/recipes.js'></script>
 </head>
 <body>
 	<!-- <header>mangoes and trailmix</header> -->
@@ -19,18 +19,24 @@
 				<div id="ingredient-list">
 					<h4>ingredients</h4>
 					<ul>
-						<li>1 medium onion small dice</li>
-						<li>4 cloves garlic; crushed then sliced</li>
-						<li>3 jalapeño or 2 serrano peppers thinly sliced</li>
-						<li>1 Tbsp cumin</li>
-						<li>2 tsp smoked paprika</li>
-						<li>28oz <a target="_blank" href="http://www.cento.com/sanmarzano/images/sm_glam.png">san marzano tomatoes</a></li>
-						<li>6 eggs</li>
-						<li>handful of chopped parsley</li>
-						<li>1/4 cup crumbled feta</li>
+						<li><span class="quantity">1</span> medium onion small dice</li>
+						<li><span class="quantity">4</span> cloves garlic; crushed then sliced</li>
+						<li><span class="quantity">3</span> jalapeño or <span class="quantity">2</span> serrano peppers thinly sliced</li>
+						<li><span class="quantity">1</span> Tbsp cumin</li>
+						<li><span class="quantity">2</span> tsp smoked paprika</li>
+						<li><span class="quantity">28</span>oz <a target="_blank" href="http://www.cento.com/sanmarzano/images/sm_glam.png">san marzano tomatoes</a></li>
+						<li><span class="quantity">6</span> eggs</li>
+						<li><span class="quantity">1</span> handful of chopped parsley</li>
+						<li><span class="quantity">1/4</span> cup crumbled feta</li>
 						<li>olive oil and pepper to finsih</li>
 					</ul>
 				</div>
+ 				<form name="multiplierInput" style="text-align: center;">
+    				<label>recipe multiplier: <input type="text" name="multiplier" value="1"></label><br>
+  				</form>
+  				<div class="buttonHolder">
+  					<input id="scaleButton" type="button" onClick="scaleRecipe();" value="scale recipe">
+  				</div>
 			<!-- <button id="hideButton" type="button" onclick="hideIngredients()">hide ingredients</button> -->
 			</div>
 		</div>

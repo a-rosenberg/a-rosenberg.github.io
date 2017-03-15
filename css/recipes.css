@@ -8,6 +8,10 @@
 	color: #a9a9a9;
 }
 
+input{
+    text-align:center;
+}
+
 div{
 	padding: 0.4em;
 }
@@ -17,6 +21,14 @@ div{
     float:left; /* add this */
 /*    border: 1px solid red;
 */}
+
+#scaleButton{
+    margin: auto;
+}
+
+.buttonHolder{
+    text-align: center;
+}
 
 footer {
 	margin: 20px auto
@@ -35,4 +47,8 @@ header {
     background-color: #FFFFFF;
     clear: left;
     text-align: right;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }

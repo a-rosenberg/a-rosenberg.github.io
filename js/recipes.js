@@ -15,13 +15,22 @@ function getRequestedMultiplierCount(){
   return Number(multiplier);
 }
 
-function scaleRecipe(){
-	var multiplier
-	multiplier = getRequestedMultiplierCount()
+function isInt(n) {
+   return n % 1 === 0;
+}
 
-	var ingredients
+function scaleRecipe(){
+	var multiplier;
+	multiplier = getRequestedMultiplierCount();
+
+	var ingredients;
 	ingredients = document.getElementsByClassName("quantity");
 	for (i in ingredients) {
-		ingredients[i].innerHTML = ingredients[i]*multiplier
-	}
+		var newQuantity = Number(eval(ingredients[i].innerHTML)) * multiplier
+		if (!isInt(newQuantity)) {
+			newQuantity = newQuantity.toFixed(2)
+		};
+		ingredients[i].innerHTML =  newQuantity;
+	};
 }
+
