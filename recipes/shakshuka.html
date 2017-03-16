@@ -5,12 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="../css/recipes.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src='../js/recipes.js'></script>
 </head>
 <body>
 	<!-- <header>mangoes and trailmix</header> -->
 	<div id="main">
-		<div id="title">
+		<div id="title" class="page-header">
 			<h1>shakshuka</h1>
 			<p id="description">a solid weeknight favorite that pairs well with naan or a warmed baguette</p>
 		</div>
@@ -32,8 +34,8 @@
 					</ul>
 				</div>
  				<form name="multiplierInput" class="multiplierInput">
-    				<span class="scale">recipe multiplier: <input type="text" name="multiplier" value="1" style="width: 15%"></span>
-    				<input id="scaleButton" type="button" onClick="scaleRecipe();" value="scale recipe">
+    				<span><input type="text" name="multiplier" value="1" style="width: 15%"></span>
+    				<button type="button" class="btn btn-default btn-sm" onClick="scaleRecipe();">scale recipe</button>
   				</form>
 
 			<!-- <button id="hideButton" type="button" onclick="hideIngredients()">hide ingredients</button> -->
