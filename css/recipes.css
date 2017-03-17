@@ -56,7 +56,3 @@ header {
     clear: left;
     text-align: right;
 }
-
-textarea:focus, input:focus{
-    outline: none;
-}
