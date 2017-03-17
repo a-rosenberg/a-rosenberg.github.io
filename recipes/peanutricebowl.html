@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>peanut rice bowl</title>
+	<title>coconut peanut rice bowl</title>
+	<link rel="icon" type="image/png" href="../img/belay.png"/>
 	<link rel="stylesheet" type="text/css" href="../css/recipes.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src='../js/recipes.js'></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<!-- <header>mangoes and trailmix</header> -->
-	<div id="main">
+	<div class="container">
 		<div id="title" class="page-header">
 			<h1>coconut peanut rice bowl</h1>
-			<p id="description">for when you've been eating unhealthy and need to feel good about yourself</p>
+			<p class="text-muted" style="font-size: 90%">for when you've been eating unhealthy and need to feel good about yourself</p>
 		</div>
-		<div id="wrapper">
-			<div id="ingredients">
-				<div id="ingredient-list">
-					<h4>ingredients</h4>
-					<ul>
-						<li><span class="quantity">1.5</span> cup short grain brown rice</li>
-						<li><span class="quantity">1/2</span> cup wild rice</li>
-						<li><span class="quantity">2</span> cup thinly sliced red cabbage</li>
-						<li><span class="quantity">1</span> Tbsp rice vinegar and <span class="quantity">3</span> Tbsp rice vinegar</li>
-						<li><span class="quantity">1</span> large asian sweet potato or <span class="quantity">2</span> medium; 1" dice (normal sweet potatos are fine)</li>
-						<li><span class="quantity">1</span> small head of broccoli cut into florets</li>
-						<li><span class="quantity">1</span> carrot sliced into the thinnest rounds you can</li>
-						<li><span class="quantity">1</span> bunch of green onions sliced</li>
-						<li><span class="quantity">1</span> can full fat coconut milk</li>
-						<li><span class="quantity">1</span> cup peanut butter</li>
-						<li><span class="quantity">3</span> Tbsp thai red curry paste</li>
-						<li><span class="quantity">1</span> tsp soy sauce</li>
-						<li>toasted sesame seeds</li>
-					</ul>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h4>ingredients</h4>
+				<ul>
+					<li><span class="quantity">1.5</span> cup short grain brown rice</li>
+					<li><span class="quantity">1/2</span> cup wild rice</li>
+					<li><span class="quantity">2</span> cup thinly sliced red cabbage</li>
+					<li><span class="quantity">1</span> Tbsp rice vinegar and <span class="quantity">3</span> Tbsp rice vinegar</li>
+					<li><span class="quantity">1</span> large asian sweet potato or <span class="quantity">2</span> medium; 1" dice (normal sweet potatos are fine)</li>
+					<li><span class="quantity">1</span> small head of broccoli cut into florets</li>
+					<li><span class="quantity">1</span> carrot sliced into the thinnest rounds you can</li>
+					<li><span class="quantity">1</span> bunch of green onions sliced</li>
+					<li><span class="quantity">1</span> can full fat coconut milk</li>
+					<li><span class="quantity">1</span> cup peanut butter</li>
+					<li><span class="quantity">3</span> Tbsp thai red curry paste</li>
+					<li><span class="quantity">1</span> tsp soy sauce</li>
+					<li>toasted sesame seeds</li>
+				</ul>
+				<form name="multiplierInput" class="multiplierInput">
+	    			<span><input type="text" name="multiplier" value="1" style="width: 15%"></span>
+	    			<button type="button" class="btn btn-default btn-sm" onClick="scaleRecipe();">scale recipe</button>
+	  			</form>
+	  			<br>
+			</div>
+			<div class="col-sm-8">
+				<div>
+					<h4>instructions</h4>
+					<p>Mix the two rices in a rice cooker bowl then rinse, drain, and fill water again to the appropiate level. Start the rice cooker on the brown rice setting.  Heat oven to 375f and place sweet potato on lightly oiled parchment paper covered cooking sheet.  Season with salt and pepper.  Once at heat, cook for 15 minutes without moving to create crisp bottoms while keeping vigilant to avoid burning.  Flip and cook for another 5 minutes before removing.  Add broccoli and season again, then return to the oven at 400f for 10 minutes.  While the potatoes are cooking prepare the cabbage and sauce.  Mix the cabbage in a small pinch of salt, sugar and 1 Tbsp of rice vinegar; toss occasionally.  Combine coconut milk, peanut butter, curry paste, soy sauce and remaining 3 Tbsp rice vinegar in a small pot.  Cook over low heat while stirring as much as possible to prevent the bottom from burning.  After 5-10 minutes it should thicken significantly; at this point turn off the heat and set aside.  Once the potatoes and broccoli are finished, assemble rice, roasted vegetables, cabbage, green onion, and sliced carrot and top with a few spoonfuls of the peanut sauce and sesame seeds.  Optionally add a fried egg or sriracha for more heat.</p>
 				</div>
- 				<form name="multiplierInput" class="multiplierInput">
-    				<span><input type="text" name="multiplier" value="1" style="width: 15%"></span>
-    				<button type="button" class="btn btn-default btn-sm" onClick="scaleRecipe();">scale recipe</button>
-  				</form>
-			<!-- <button id="hideButton" type="button" onclick="hideIngredients()">hide ingredients</button> -->
+				<div>
+					<h4>notes</h4>
+					<p>I find this achieves somewhat perfect color balance with the bright yolk of an over-easy egg.  This doesn't cook fast because of the roasting and rice, but it is simple and can be done somewhat in the background for much of the cook time.</p>
+				</div>
 			</div>
 		</div>
-
-		<div id="instructions">
-			<h4>instructions</h4>
-			<p>Mix the two rices in a rice cooker bowl then rinse, drain, and fill water again to the appropiate level. Start the rice cooker on the brown rice setting.  Heat oven to 375f and place sweet potato on lightly oiled parchment paper covered cooking sheet.  Season with salt and pepper.  Once at heat, cook for 15 minutes without moving to create crisp bottoms while keeping vigilant to avoid burning.  Flip and cook for another 5 minutes before removing.  Add broccoli and season again, then return to the oven at 400f for 10 minutes.  While the potatoes are cooking prepare the cabbage and sauce.  Mix the cabbage in a small pinch of salt, sugar and 1 Tbsp of rice vinegar; toss occasionally.  Combine coconut milk, peanut butter, curry paste, soy sauce and remaining 3 Tbsp rice vinegar in a small pot.  Cook over low heat while stirring as much as possible to prevent the bottom from burning.  After 5-10 minutes it should thicken significantly; at this point turn off the heat and set aside.  Once the potatoes and broccoli are finished, assemble rice, roasted vegetables, cabbage, green onion, and sliced carrot and top with a few spoonfuls of the peanut sauce and sesame seeds.  Optionally add a fried egg or sriracha for more heat.</p>
-		</div>
-		<div id="notes">
-			<h4>notes</h4>
-			<p>I find this achieves somewhat perfect color balance with the bright yolk of an over-easy egg.  This doesn't cook fast because of the roasting and rice, but it is simple and can be done somewhat in the background for much of the cook time.</p>
-		</div>
-		<footer>
-			<p><a href="shakshuka.html">older</a> < <a href="../index.html">index</a> > newer</p>
-			aaron rosenberg | <a href="https://github.com/a-rosenberg">github.com/a-rosenberg</a>
-		</footer>
 	</div>
+	<footer>
+		<p><a href="shakshuka.html">older</a> < <a href="../index.html">index</a> > <a href="mushroomrissotto.html">newer</a></p>
+		aaron rosenberg | <a href="https://github.com/a-rosenberg">github.com/a-rosenberg</a>
+	</footer>
 </body>
 </html>
