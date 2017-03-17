@@ -22,3 +22,6 @@ function scaleRecipe(){
 	};
 }
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	document.getElementsById('hide-mobile').style.visibility='hidden'
+}
